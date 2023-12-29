@@ -9,3 +9,9 @@ export interface Category {
   name: string;
   billboard: Billboard;
 }
+
+export interface Billboard {
+  id: string;
+  label: string;
+  
+}
