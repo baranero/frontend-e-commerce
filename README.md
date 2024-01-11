@@ -1,37 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# frontend-e-commerce
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project is a comprehensive e-commerce platform designed for managing multiple stores and products through a robust admin dashboard.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Key Features
+
+- **Admin Dashboard**: Utilizing Shadcn UI for seamless management of CMS, Admin, and API.
+- **Multi-Vendor/Store Management**: Manage different stores (e.g., shoe, laptop, suit stores) with individual API routes.
+- **Product Management**: Capabilities to create, update, and delete products.
+- **Image Management**: Upload and manage multiple images for products.
+- **Filter Management**: Create, update, and delete filters like color and size.
+- **Billboard Management**: Create and manage billboards, attachable to categories or standalone.
+- **Advanced Search and Pagination**: Search through categories, products, filters, and billboards.
+- **Featured Products**: Highlight products on the homepage.
+- **Sales and Orders Monitoring**: View orders, sales, and detailed analytics.
+- **Revenue Graphs**: Visual representation of revenue.
+- **Clerk Authentication**: Secure user authentication system.
+- **Stripe Integration**: Implementing Stripe checkout and webhooks.
+- **Database Management**: Using MySQL with Prisma and PlanetScale.
+
+### Prerequisites
+
+**Node version 14.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/AntonioErdeljac/next13-ecommerce-store.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Setup .env file
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+```js
+NEXT_PUBLIC_API_URL=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Start the app
 
-## Deploy on Vercel
+```shell
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Available commands
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# frontend-e-commerce
+Running commands with npm `npm run [command]`
+
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
